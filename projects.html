@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Daniel Meco</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Daniel<span>Meco</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="projects-hero">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>A collection of my recent work and personal projects</p>
+        </div>
+    </section>
+
+    <section class="projects-content">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="desktop">Desktop Applications</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Escape Room Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image" style="position: relative; width: 100%; height: 0; padding-bottom: 60%; overflow: hidden;">
+                        <img src="assets/images/escapeRoom.png" alt="Escape Room" 
+                             style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover; object-position: center;" 
+                             onerror="this.src='https://via.placeholder.com/600x400?text=Escape+Room'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Escape Room</h3>
+                        <p>Escape Room Multiplayer Game is a real-time web application where players collaborate to solve puzzles and overcome challenges within a fixed time limit. The game features interactive elements, timer countdowns, and team coordination.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>NodeJs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/danielmec/Escape-Room.git" class="btn" target="_blank">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                            <!-- <a href="#" class="btn">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fit Flow Project -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-image" style="position: relative; width: 100%; height: 0; padding-bottom: 60%; overflow: hidden;">
+                        <img src="assets/images/FitFlow.png" alt="Fit Flow" 
+                             style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover; object-position: center;" 
+                             onerror="this.src='https://via.placeholder.com/600x400?text=Fit+Flow'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fit Flow</h3>
+                        <p>A comprehensive system for managing customers of a gym. This desktop application allows gym owners to manage memberships, track attendance, schedule classes, and handle payments. The application includes features like user profiles, subscription management, and usage analytics.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>XAML</span>
+                            <span>Firebase NoSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/danielmec/GymProject.git" class="btn" target="_blank">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                            <!-- <a href="#" class="btn">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spazio per progetti futuri -->
+                <div class="project-card future-project" data-category="mobile">
+                    <div class="project-image" style="position: relative; width: 100%; height: 0; padding-bottom: 60%; overflow: hidden; background-color: #f4f7fa;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                            <i class="fas fa-mobile-alt" style="font-size: 4rem; color: var(--primary-color);"></i>
+                            <h3 style="margin-top: 20px;">Coming Soon</h3>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile App Project</h3>
+                        <p>A new mobile application project is currently in development. Stay tuned for updates!</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>In Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <div class="container">
+            <h2>Have a project in mind?</h2>
+            <p>I'm always looking for new challenges and opportunities to collaborate.</p>
+            <a href="contact.html" class="btn primary">Let's Talk</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Daniel<span>Meco</span></h2>
+                    <p>Software Developer</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/danielmec" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-meco-62a2a9253/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:danielmeco20@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Daniel Meco. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show/hide projects based on filter
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
