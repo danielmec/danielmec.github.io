@@ -20,6 +20,11 @@ body {
     line-height: 1.6;
     color: var(--dark-color);
     background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -335,11 +340,23 @@ nav ul li a.active::after {
     color: white;
 }
 
+/* Contact Page Adjustments */
+.contact-hero {
+    margin-top: 80px; /* Aggiunge spazio sotto l'header */
+    padding: 60px 0;
+}
+
+.contact-content {
+    flex: 1; /* Permette alla sezione di espandersi */
+    padding: 60px 0 100px; /* Aumenta il padding inferiore */
+}
+
 /* Footer */
 footer {
     background-color: var(--dark-color);
     color: white;
     padding: 60px 0 20px;
+    margin-top: auto; /* Spinge il footer verso il basso */
 }
 
 .footer-content {
@@ -523,4 +540,15 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
+}
+
+/* Regola la distanza tra le sezioni su schermi piccoli */
+@media screen and (max-width: 768px) {
+    .contact-hero {
+        margin-top: 120px; /* Header più alto su mobile */
+    }
+    
+    .contact-content {
+        padding: 40px 0 80px;
+    }
 }
