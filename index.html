@@ -1,33 +1,149 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Daniel Meco | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Benvenuto nel mio Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">Chi Sono</a></li>
-                <li><a href="projects/project1.html">Progetto 1</a></li>
-                <li><a href="projects/project2.html">Progetto 2</a></li>
-                <li><a href="contact.html">Contatti</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <h1>Daniel<span>Meco</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>I miei progetti</h2>
-            <p>Scopri i miei progetti recenti e il mio lavoro.</p>
-        </section>
-    </main>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>Daniel Meco</span></h1>
+                <h2>Software Developer</h2>
+                <p>Welcome to my professional portfolio. I create elegant solutions through code.</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn primary">View My Work</a>
+                    <a href="contact.html" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Project 1" onerror="this.src='https://via.placeholder.com/350x200?text=Project+1'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A brief description of the first project and the technologies used.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="projects/project1.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Project 2" onerror="this.src='https://via.placeholder.com/350x200?text=Project+2'">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>A brief description of the second project and the technologies used.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="projects/project2.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="projects.html" class="btn secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fab fa-github"></i> GitHub</li>
+                        <li><i class="fas fa-terminal"></i> Command Line</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-brief">
+        <div class="container">
+            <h2>Interested in working together?</h2>
+            <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+            <a href="contact.html" class="btn primary">Get In Touch</a>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2023 Daniel Meco. Tutti i diritti riservati.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Daniel<span>Meco</span></h2>
+                    <p>Software Developer</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/danielmec" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/danielmeco" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:contact@danielmeco.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Daniel Meco. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
