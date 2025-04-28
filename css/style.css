@@ -377,3 +377,150 @@ footer {
     font-size: 0.9rem;
     color: var(--gray-color);
 }
+
+/* About Me Page Styles */
+
+/* About Intro Section */
+.about-intro {
+    padding: 100px 0;
+    background-color: #f4f7fa;
+    text-align: center;
+}
+
+.about-intro h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.8;
+}
+
+/* Education Section */
+.education {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.education h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education ul li {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.education ul li strong {
+    color: var(--primary-color);
+}
+
+.education ul li em {
+    color: var(--gray-color);
+    font-style: normal;
+}
+
+/* Skills Section */
+.skills {
+    padding: 100px 0;
+    background-color: #f4f7fa;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills ul li {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Experience Section */
+.experience {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.experience p {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.experience ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience ul li {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.experience ul li strong {
+    color: var(--primary-color);
+}
+
+/* Hobbies Section */
+.hobbies {
+    padding: 100px 0;
+    background-color: #f4f7fa;
+    text-align: center;
+}
+
+.hobbies h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hobbies p {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
