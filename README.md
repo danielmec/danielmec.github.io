@@ -1,6 +1,6 @@
 # Portfolio GitHub
 
-Questo progetto è un sito statico di presentazione del portfolio, progettato per mostrare i tuoi progetti, informazioni personali e modalità di contatto.
+Questo progetto è un sito statico di presentazione del portfolio, progettato per mostrare i progetti, informazioni personali e modalità di contatto.
 
 ## Struttura del Progetto
 
@@ -18,8 +18,8 @@ Il progetto è composto dai seguenti file e cartelle:
 - **projects/**: Cartella contenente le pagine dei progetti.
   - **project1.html**: Pagina dedicata al primo progetto.
   - **project2.html**: Pagina dedicata al secondo progetto.
-- **about.html**: Pagina con informazioni su di te, la tua esperienza e le tue competenze.
-- **contact.html**: Pagina con un modulo di contatto o informazioni su come contattarti.
+- **about.html**: Pagina con informazioni personali, le esperienze e le competenze.
+- **contact.html**: Pagina con un modulo di contatto o informazioni su come contattare.
 
 ## Istruzioni per l'uso
 
