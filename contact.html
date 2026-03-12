@@ -15,12 +15,19 @@
             <div class="logo">
                 <h1>Daniel<span>Meco</span></h1>
             </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="lang-toggle" id="langToggle" title="Passa all'italiano">
+                <span class="lang-flag">🇮🇹</span>
+                <span class="lang-label">IT</span>
+            </button>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About Me</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,26 +35,27 @@
 
     <section class="contact-hero">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Have a question or want to work together? Feel free to contact me!</p>
+            <div class="hero-badge" data-i18n="contact.hero.badge">Let's Talk</div>
+            <h2 data-i18n="contact.hero.h2">Get In Touch</h2>
+            <p data-i18n="contact.hero.p">Have a question or want to work together? Feel free to contact me!</p>
         </div>
     </section>
 
     <section class="contact-content">
-        <div class="container">
+        <div class="container" data-reveal>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
+                    <h3 data-i18n="contact.info.h3">Contact Information</h3>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <p><a href="mailto:danielmeco20@gmail.com">danielmeco20@gmail.com</a></p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Rimini, Italy</p>
+                        <p data-i18n="contact.info.location">Rimini, Italy</p>
                     </div>
                     <div class="social-links-contact">
-                        <h4>Connect With Me</h4>
+                        <h4 data-i18n="contact.connect">Connect With Me</h4>
                         <div class="social-icons">
                             <a href="https://github.com/danielmec" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/daniel-meco-62a2a9253/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -56,29 +64,29 @@
                 </div>
                 
                 <div class="contact-form">
-                    <h3>Send Me a Message</h3>
-                    <form id="contactForm" onsubmit="sendEmail(event)">
+                    <h3 data-i18n="contact.form.h3">Send Me a Message</h3>
+                    <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name" data-i18n="contact.form.name">Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email" data-i18n="contact.form.email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="subject">Subject</label>
+                            <label for="subject" data-i18n="contact.form.subject">Subject</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message" data-i18n="contact.form.message">Message</label>
                             <textarea id="message" name="message" rows="6" required></textarea>
                         </div>
                         
-                        <button type="submit" class="btn submit-btn">Send Message</button>
+                        <button type="submit" class="btn submit-btn" data-i18n="contact.form.btn">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -95,27 +103,16 @@
                 <div class="social-links">
                     <a href="https://github.com/danielmec" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/daniel-meco-62a2a9253/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:danielmeco20@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Daniel Meco. All rights reserved.</p>
+                <p data-i18n="footer.copy">&copy; 2026 Daniel Meco. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        function sendEmail(event) {
-            event.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            const mailtoLink = `mailto:danielmeco20@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
-            
-            window.location.href = mailtoLink;
-        }
-    </script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

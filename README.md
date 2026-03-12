@@ -38,7 +38,3 @@ Il progetto è composto dai seguenti file e cartelle:
 ## Contribuzione
 
 Se desideri contribuire a questo progetto, sentiti libero di aprire una pull request o segnalare problemi.
-
-## Licenza
-
-Questo progetto è sotto licenza MIT. Vedi il file LICENSE per ulteriori dettagli.

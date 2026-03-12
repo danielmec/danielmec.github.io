@@ -3,100 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me | Daniel Meco</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- ── HEADER ── -->
     <header>
         <div class="container">
-            <h1>About Me</h1>
+            <div class="logo">
+                <h1>Daniel<span>Meco</span></h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="lang-toggle" id="langToggle" title="Passa all'italiano">
+                <span class="lang-flag">🇮🇹</span>
+                <span class="lang-label">IT</span>
+            </button>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" class="active" data-i18n="nav.about">About Me</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <section class="about-intro">
-            <div class="container">
-                <h2>Who I Am</h2>
-                <p>
-                    My name is Daniel Meco, and I am a Master's student in Computer Engineering. I completed my Bachelor's degree in 2024, and before that, I graduated from a technical high school in Computer Science in 2020 with a score of 100/100.
+
+    <!-- ── HERO ── -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <div class="hero-badge" data-i18n="about.hero.badge">About Me</div>
+                <h1 data-i18n-html="about.hero.h1">Who I <span>Am</span></h1>
+                <p data-i18n="about.hero.p">Passionate computer engineer, lifelong learner and problem-solver based in Rimini, Italy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── INTRO ── -->
+    <section class="about-intro">
+        <div class="container">
+            <h2 class="section-title" data-reveal data-i18n-html="about.intro.title">A bit about <span>myself</span></h2>
+            <div class="about-intro-grid" data-reveal>
+                <p data-i18n-html="about.intro.p1">
+                    My name is <strong>Daniel Meco</strong>, and I'm a Master's student in Computer Engineering at the University of Bologna. I completed my Bachelor's degree in 2024, and before that I graduated from a technical high school in Computer Science in 2020 with a score of <strong>100/100</strong>.
                 </p>
-                <p>
-                    I am passionate about technology, problem-solving, and creating innovative solutions through software development. My journey in computer science has been driven by curiosity and a desire to learn and grow continuously.
-                </p>
-            </div>
-        </section>
-        <section class="education">
-            <div class="container">
-                <h2>Education</h2>
-                <ul>
-                    <li>
-                        <strong>Master's Degree in Computer Engineering</strong> (Ongoing)  
-                        <em>University of Bologna</em>
-                    </li>
-                    <li>
-                        <strong>Bachelor's Degree in Computer Engineering</strong> (2021-2024)  
-                        <em>University of Bologna</em>
-                    </li>
-                    <li>
-                        <strong>Technical High School in Computer Science</strong> (2015-2020)  
-                        <em>ITIS A. VOLTA </em> 
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Programming Languages: Python, Java, C++, C#</li>
-                    <li>Web Development: HTML, CSS, JavaScript, React</li>
-                    <li>Database Management: SQL, Firebase NoSQL</li>
-                    <li>Version Control: Git, GitHub</li>
-                    <li>Problem-Solving and Algorithm Design</li>
-                </ul>
-            </div>
-        </section>
-        <section class="experience">
-            <div class="container">
-                <h2>Experience</h2>
-                <p>
-                    During my academic journey, I have worked on various projects, including:
-                </p>
-                <ul>
-                    <li>
-                        <strong>Escape Room Multiplayer Game</strong>: A real-time web application where players collaborate to solve puzzles and overcome challenges.
-                    </li>
-                    <li>
-                        <strong>Fit Flow</strong>: A system to manage gym customers, built using C# and Firebase.
-                    </li>
-                    <li>
-                        <strong>Other Academic Projects</strong>: Developed algorithms, web applications, and software solutions as part of my coursework.
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="hobbies">
-            <div class="container">
-                <h2>Hobbies & Interests</h2>
-                <p>
-                    When I'm not coding, I enjoy exploring new technologies, reading about artificial intelligence, and playing video games. I also love collaborating with others on creative projects and participating in hackathons.
+                <p data-i18n-html="about.intro.p2">
+                    I'm passionate about technology, problem-solving, and creating innovative software solutions. My journey in computer science has been driven by curiosity and a continuous desire to grow — from building web apps to cross-platform desktop tools and multiplayer games.
                 </p>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- ── EDUCATION TIMELINE ── -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title" data-reveal data-i18n-html="about.edu.title">Education <span>Timeline</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item" data-reveal data-reveal-delay="1">
+                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-body">
+                        <h4 data-i18n="about.edu.master.h4">Master's Degree in Computer Engineering</h4>
+                        <div class="timeline-place"><i class="fas fa-university"></i> University of Bologna</div>
+                        <span class="timeline-date" data-i18n="about.edu.master.date">2024 — Present</span>
+                        <p data-i18n="about.edu.master.p">Advanced topics in software engineering, distributed systems, and AI.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal data-reveal-delay="2">
+                    <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                    <div class="timeline-body">
+                        <h4 data-i18n="about.edu.bachelor.h4">Bachelor's Degree in Computer Engineering</h4>
+                        <div class="timeline-place"><i class="fas fa-university"></i> University of Bologna</div>
+                        <span class="timeline-date" data-i18n="about.edu.bachelor.date">2021 — 2024</span>
+                        <p data-i18n="about.edu.bachelor.p">Core studies in algorithms, data structures, web development, databases and OOP.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal data-reveal-delay="3">
+                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                    <div class="timeline-body">
+                        <h4 data-i18n="about.edu.highschool.h4">Technical High School — Computer Science</h4>
+                        <div class="timeline-place"><i class="fas fa-map-marker-alt"></i> <span data-i18n="about.edu.highschool.place">ITIS A. Volta</span></div>
+                        <span class="timeline-date" data-i18n="about.edu.highschool.date">2015 — 2020</span>
+                        <p data-i18n-html="about.edu.highschool.p">Graduated with a score of <strong>100/100</strong>. Foundation in programming, networks and electronics.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="about-skills-section">
+        <div class="container">
+            <h2 class="section-title" data-reveal data-i18n-html="about.skills.title">My <span>Skills</span></h2>
+            <div class="skills-tags-grid">
+
+                <div class="skills-tag-group" data-reveal data-reveal-delay="1">
+                    <h4><i class="fas fa-laptop-code"></i> <span data-i18n="about.skills.frontend">Frontend</span></h4>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">React Native</span>
+                    </div>
+                </div>
+
+                <div class="skills-tag-group" data-reveal data-reveal-delay="2">
+                    <h4><i class="fas fa-server"></i> <span data-i18n="about.skills.backend">Backend</span></h4>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Scala</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+
+                <div class="skills-tag-group" data-reveal data-reveal-delay="3">
+                    <h4><i class="fas fa-database"></i> <span data-i18n-html="about.skills.db">Database &amp; Tools</span></h4>
+                    <div class="tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Firebase NoSQL</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">.NET MAUI</span>
+                        <span class="tag">Electron</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section class="timeline-section" style="background: var(--bg-alt);">
+        <div class="container">
+            <h2 class="section-title" data-reveal data-i18n-html="about.exp.title">Project <span>Experience</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item" data-reveal data-reveal-delay="1">
+                    <div class="timeline-icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="timeline-body">
+                        <h4>Escape Room — Multiplayer Web Game</h4>
+                        <div class="timeline-place"><i class="fas fa-code"></i> HTML · CSS · JavaScript · Node.js</div>
+                        <p data-i18n="about.exp.escape.p">Real-time multiplayer web app where teams solve puzzles against the clock. Built with Socket.io for live communication.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal data-reveal-delay="2">
+                    <div class="timeline-icon"><i class="fas fa-dumbbell"></i></div>
+                    <div class="timeline-body">
+                        <h4>Fit Flow — Gym Management App</h4>
+                        <div class="timeline-place"><i class="fas fa-code"></i> C# · XAML · Firebase NoSQL · .NET MAUI</div>
+                        <p data-i18n="about.exp.fitflow.p">Cross-platform app (iOS, macOS, Android, Desktop) managing gym customers, trainers, bookings and equipment.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal data-reveal-delay="3">
+                    <div class="timeline-icon"><i class="fas fa-chess"></i></div>
+                    <div class="timeline-body">
+                        <h4>Risk Multiplayer Application</h4>
+                        <div class="timeline-place"><i class="fas fa-code"></i> Scala · Akka · ScalaFX · SBT</div>
+                        <p data-i18n="about.exp.risk.p">Desktop multiplayer strategy game inspired by Risiko. Supports local and online play with a functional architecture.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal data-reveal-delay="4">
+                    <div class="timeline-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="timeline-body">
+                        <h4>Java Dependency Analyzer</h4>
+                        <div class="timeline-place"><i class="fas fa-code"></i> Electron · React · D3.js · RxJS · Node.js</div>
+                        <p data-i18n="about.exp.analyzer.p">Desktop tool that scans Java projects, extracts class dependencies and renders them as an interactive graph.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-reveal data-reveal-delay="5">
+                    <div class="timeline-icon"><i class="fas fa-shield-virus"></i></div>
+                    <div class="timeline-body">
+                        <h4>Distributed Honeypot</h4>
+                        <div class="timeline-place"><i class="fas fa-code"></i> Vue.js · Node.js · MongoDB · MQTT · Docker · Groq AI</div>
+                        <p data-i18n="about.exp.honeypot.p">Distributed cybersecurity system simulating vulnerable services to capture intrusion attempts in real time, with AI-powered attack analysis and a full CI/CD pipeline.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── HOBBIES ── -->
+    <section class="hobbies">
+        <div class="container">
+            <h2 class="section-title" data-reveal data-i18n-html="about.hobbies.title">Hobbies &amp; <span>Interests</span></h2>
+            <div class="hobbies-grid" data-reveal>
+                <div class="hobby-card">
+                    <i class="fas fa-microchip"></i>
+                    <p data-i18n="about.hobby.tech">New Technologies</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-robot"></i>
+                    <p data-i18n="about.hobby.ai">Artificial Intelligence</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-gamepad"></i>
+                    <p data-i18n="about.hobby.games">Video Games</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-users"></i>
+                    <p data-i18n="about.hobby.hack">Hackathons</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-book"></i>
+                    <p data-i18n="about.hobby.read">Tech Reading</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="contact-brief">
+        <div class="container">
+            <h2 data-i18n="about.cta.h2">Interested in working together?</h2>
+            <p data-i18n="about.cta.p">I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+            <a href="contact.html" class="btn primary" data-i18n="about.cta.btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Daniel Meco. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Daniel<span>Meco</span></h2>
+                    <p data-i18n="footer.role">Software Developer</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/danielmec" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-meco-62a2a9253/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:danielmeco20@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p data-i18n="footer.copy">&copy; 2026 Daniel Meco. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
