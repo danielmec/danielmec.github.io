@@ -12,28 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Daniel<span>Meco</span></h1>
-            </div>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <button class="lang-toggle" id="langToggle" title="Passa all'italiano">
-                <span class="lang-flag">🇮🇹</span>
-                <span class="lang-label">IT</span>
-            </button>
-            <nav>
-                <ul>
-                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-                    <li><a href="about.html" data-i18n="nav.about">About Me</a></li>
-                    <li><a href="projects.html" class="active" data-i18n="nav.projects">Projects</a></li>
-                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
 
     <section class="projects-hero">
         <div class="container">
@@ -176,7 +155,7 @@
                             <span>Nginx</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/danielmec/Distributed-Honeypot" class="btn" target="_blank">
+                            <a href="https://github.com/floyddc/Distributed-Honeypot.git" class="btn" target="_blank">
                                 <i class="fab fa-github"></i> <span data-i18n="projects.source">View Source</span>
                             </a>
                         </div>
@@ -215,25 +194,8 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Daniel<span>Meco</span></h2>
-                    <p data-i18n="footer.role">Software Developer</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/danielmec" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/daniel-meco-62a2a9253/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:danielmeco20@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p data-i18n="footer.copy">&copy; 2026 Daniel Meco. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>

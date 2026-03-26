@@ -36,10 +36,18 @@
 /* Tablet / Small ≤ 768px — hamburger activates */
 @media screen and (max-width: 768px) {
 
-    /* Lang toggle on mobile */
-    .lang-toggle {
+    /* Lang dropdown inside mobile nav */
+    .lang-dropdown {
         margin-left: 0;
-        order: -1;
+        margin-top: 8px;
+    }
+    .lang-current {
+        text-align: center;
+        border-color: rgba(255,255,255,0.15);
+    }
+    .lang-options {
+        position: static;
+        border-radius: 0 0 var(--radius-sm) var(--radius-sm);
     }
 
     /* Hamburger button visible */

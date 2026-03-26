@@ -269,14 +269,11 @@ const I18n = (() => {
             if (val !== undefined) el.placeholder = val;
         });
 
-        // Update toggle button appearance
-        const btn = document.getElementById('langToggle');
-        if (btn) {
-            const isEN = lang === 'en';
-            btn.querySelector('.lang-flag').textContent = isEN ? '🇮🇹' : '🇬🇧';
-            btn.querySelector('.lang-label').textContent = isEN ? 'IT' : 'EN';
-            btn.title = isEN ? 'Passa all\'italiano' : 'Switch to English';
-        }
+        // Update language dropdown
+        const currentEl = document.getElementById('langCurrent');
+        const optionBtn = document.getElementById('langToggle');
+        if (currentEl) currentEl.textContent = lang.toUpperCase();
+        if (optionBtn) optionBtn.textContent = lang === 'en' ? 'IT' : 'EN';
 
         // Notify main.js to restart typed text if needed
         window.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
@@ -296,14 +293,13 @@ const I18n = (() => {
     return { applyTranslations, toggle, getLang, getTypedWords, t };
 })();
 
+// Expose globally so navbar.js and main.js can access it
+window.I18n = I18n;
+
 // ─────────────────────────────────────────────
 //  Init on DOM ready
 // ─────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-    // Wire toggle button
-    const btn = document.getElementById('langToggle');
-    if (btn) btn.addEventListener('click', I18n.toggle);
-
-    // Apply saved language
+    // Apply saved language (navbar injected by navbar.js before this runs)
     I18n.applyTranslations();
 });

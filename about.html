@@ -13,29 +13,6 @@
 </head>
 <body>
 
-    <!-- ── HEADER ── -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Daniel<span>Meco</span></h1>
-            </div>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <button class="lang-toggle" id="langToggle" title="Passa all'italiano">
-                <span class="lang-flag">🇮🇹</span>
-                <span class="lang-label">IT</span>
-            </button>
-            <nav>
-                <ul>
-                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-                    <li><a href="about.html" class="active" data-i18n="nav.about">About Me</a></li>
-                    <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
-                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
     <!-- ── HERO ── -->
     <section class="about-hero">
@@ -54,7 +31,7 @@
             <h2 class="section-title" data-reveal data-i18n-html="about.intro.title">A bit about <span>myself</span></h2>
             <div class="about-intro-grid" data-reveal>
                 <p data-i18n-html="about.intro.p1">
-                    My name is <strong>Daniel Meco</strong>, and I'm a Master's student in Computer Engineering at the University of Bologna. I completed my Bachelor's degree in 2024, and before that I graduated from a technical high school in Computer Science in 2020 with a score of <strong>100/100</strong>.
+                    My name is <strong>Daniel Meco</strong>, and I'm a Master's student in Computer Engineering at the University of Bologna. I completed my Bachelor's degree in 2024, and before that I graduated from a technical high school in Computer Science in 2020 .
                 </p>
                 <p data-i18n-html="about.intro.p2">
                     I'm passionate about technology, problem-solving, and creating innovative software solutions. My journey in computer science has been driven by curiosity and a continuous desire to grow — from building web apps to cross-platform desktop tools and multiplayer games.
@@ -242,26 +219,8 @@
         </div>
     </section>
 
-    <!-- ── FOOTER ── -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Daniel<span>Meco</span></h2>
-                    <p data-i18n="footer.role">Software Developer</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/danielmec" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/daniel-meco-62a2a9253/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:danielmeco20@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p data-i18n="footer.copy">&copy; 2026 Daniel Meco. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
