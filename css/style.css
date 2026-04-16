@@ -322,6 +322,10 @@ nav ul li a.active::after {
     font-weight: 400;
     color: rgba(255,255,255,0.75);
     margin-bottom: 20px;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content p {
